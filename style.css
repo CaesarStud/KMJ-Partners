@@ -17,7 +17,6 @@ body {
 /* Mobile Fix: Override `background-attachment: fixed;` */
 @media screen and (max-width: 768px) {
     body {
-        background-size: cover; /* Prevents zoom-in effect */
         background-attachment: scroll; /* Fixes issues on mobile */
     }
 }
