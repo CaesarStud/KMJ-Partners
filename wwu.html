@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Black Ops Media</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" type="image/jpg" href="icon.jpg" />
+
+        <style>
+            h1 {
+                color: white;
+                text-align: center;
+                margin-top: 80px;
+                margin-bottom: 20px;
+            }
+
+            /* General Page Styling */
+            body {
+                font-family: 'Arial', sans-serif;
+                background-image: url('third-container-background.jpg');
+                color: #333;
+                margin: 0;
+                padding: 0;
+            }
+
+            #typed-work-with-us {
+                font-size: 3em;
+                font-weight: bold;
+                color: white;
+                text-align: center;
+                white-space: nowrap;
+                overflow: hidden;
+                display: block;
+            }
+
+           /* Form container - No background */
+            .form-container {
+                width: 100%;
+                max-width: 600px;
+                margin: 50px auto;
+                padding: 0;
+                text-align: center;
+                box-shadow: none;
+                background: none;
+                border-radius: 0;
+            }
+
+            /* Form layout */
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            /* Form row - aligns pairs side by side */
+            .form-row {
+                display: flex;
+                gap: 20px; /* Adds horizontal space */
+                justify-content: space-between;
+            }
+
+            /* Makes sure inputs have space */
+            .form-group {
+                width: calc(50% - 20px);
+                display: flex;
+                flex-direction: column;
+            }
+
+            /* Inputs */
+            input, textarea {
+                font-size: 1rem;
+                padding: 12px;
+                width: 100%;
+                border: 1px solid rgba(100, 100, 100, 0.5); /* Light white border */
+                border-radius: 5px;
+                background-color: rgba(50, 50, 50, 0.7); /* Transparent light gray */
+                color: white; /* White text inside input */
+                transition: all 0.3s ease-in-out;
+            }
+
+            /* Placeholder text - Make it white */
+            input::placeholder, textarea::placeholder {
+                color: rgba(255, 255, 255, 0.7); /* White placeholder text */
+                font-size: 1rem;
+            }
+
+            /* Input field focus */
+            input:focus, textarea:focus {
+                border-color: rgba(255, 255, 255, 0.7);
+                background-color: rgba(255, 255, 255, 0.2); /* Slightly darker on focus */
+                outline: none;
+            }
+
+            /* Button Styling */
+            button {
+                width: 100%;
+                padding: 15px;
+                font-size: 1.1rem;
+                font-weight: bold;
+                color: white;
+                background-color: rgb(0, 0, 0, 0);
+                border: 1px solid white;
+                border-radius: 5px;
+                cursor: pointer;
+                text-transform: uppercase;
+                transition: all 0.3s ease-in-out;
+            }
+
+            /* Button Hover */
+            button:hover {
+                color: black;
+                background-color: white;
+            }
+
+            /* Responsive Design: Stack form rows on mobile */
+            @media screen and (max-width: 768px) {
+                .form-container {
+                    width: 90%;
+                    padding: 0;
+                }
+
+                .form-row {
+                    flex-direction: column; /* Stack on smaller screens */
+                    gap: 10px;
+                }
+
+                .form-group {
+                    width: 100%;
+                }
+
+                input, textarea {
+                    font-size: 1rem;
+                    padding: 10px;
+                }
+
+                button {
+                    padding: 12px;
+                    font-size: 1rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="navdiv">
+                    <div class="logo"><a href="index.html"><img src="logo1.png" alt="Company Logo" class="nav-image"></a></div>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="wwu.html">WORK WITH US</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <h1 id="typed-work-with-us"></h1>
+
+        <div class="form-container">
+            <form action="submit-form.php" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Full Name" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email Address" required>
+                    </div>
+                </div>
+        
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="instagram" name="instagram" placeholder="Instagram Handle">
+                    </div>
+        
+                    <div class="form-group">
+                        <input type="text" id="tiktok" name="tiktok" placeholder="TikTok Handle">
+                    </div>
+                </div>
+        
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="twitter" name="twitter" placeholder="Twitter Handle">
+                    </div>
+        
+                    <div class="form-group">
+                        <input type="text" id="other-socials" name="other-socials" placeholder="Other Relevant Socials">
+                    </div>
+                </div>
+        
+                <textarea id="description" name="description" rows="5" placeholder="Tell us about yourself" required></textarea>
+        
+                <button type="submit">SEND</button>
+            </form>
+        </div>
+        
+        <div class="copyrights-container" style="color: white; text-align: center;">
+            <p>Copyrights © 2025 Black Ops Media. All Rights Reserved.</p>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
