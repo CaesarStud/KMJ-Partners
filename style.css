@@ -14,6 +14,14 @@ body {
     max-width: 100%;
 }
 
+/* Mobile Fix: Override `background-attachment: fixed;` */
+@media screen and (max-width: 768px) {
+    body {
+        background-size: cover; /* Prevents zoom-in effect */
+        background-attachment: scroll; /* Fixes issues on mobile */
+    }
+}
+
 .navbar {
     font-family: calibri;
     /*padding-right: 15px;*/
