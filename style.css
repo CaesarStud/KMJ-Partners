@@ -14,17 +14,17 @@ body {
     max-width: 100%;
 }
 
-.navbar {
-    font-family: calibri;
-    /*padding-right: 15px;*/
-    padding-left: 15px;
-}
-
 /* Mobile Fix: Use scroll instead of fixed */
 @media screen and (max-width: 768px) {
     body {
         background-attachment: content; /* Prevents mobile issues */
     }
+}
+
+.navbar {
+    font-family: calibri;
+    /*padding-right: 15px;*/
+    padding-left: 15px;
 }
 
 .navdiv {
