@@ -17,7 +17,8 @@ body {
 /* Mobile Fix: Use scroll instead of fixed */
 @media screen and (max-width: 768px) {
     body {
-        background-attachment: content; /* Prevents mobile issues */
+        background-attachment: none; /* Prevents mobile issues */
+        background-repeat: repeat;
     }
 }
 
