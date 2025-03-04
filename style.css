@@ -14,11 +14,12 @@ body {
     max-width: 100%;
 }
 
-/* Mobile Fix: Use scroll instead of fixed */
+/* Fixes issues on mobile */
 @media screen and (max-width: 768px) {
     body {
-        background-size: cover; /* Prevents zoom-in effect */
-        background-attachment: scroll; /* Fixes issues on mobile */
+        background-size: cover; 
+        background-attachment: scroll; 
+        background-repeat: repeat;
     }
 }
 
