@@ -20,6 +20,13 @@ body {
     padding-left: 15px;
 }
 
+/* Mobile Fix: Use scroll instead of fixed */
+@media screen and (max-width: 768px) {
+    body {
+        background-attachment: content; /* Prevents mobile issues */
+    }
+}
+
 .navdiv {
     display: flex;
     align-items: center;
