@@ -3,25 +3,42 @@
 }
 
 body {
-    background-image: url("kalogeras2.jpg");
-    background-size: cover; /* Ensures the image covers the full screen */
-    background-position: center center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents repeating */
-    background-attachment: fixed; /* Keeps the image fixed while scrolling */
     height: 100vh; /* Makes sure the body covers the full viewport height */
     margin: 0;
     padding: 0;
     max-width: 100%;
 }
 
+/* Video container to hold the background video */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1; /* Sends it behind other content */
+}
+
+/* Full-screen video settings */
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the video */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video fills the screen without distortion */
+}
+
 /* Fixes issues on mobile */
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
     body {
         background-size: cover; 
         background-attachment: scroll; 
         background-repeat: repeat;
     }
-}
+}*/
 
 .navbar {
     font-family: calibri;
